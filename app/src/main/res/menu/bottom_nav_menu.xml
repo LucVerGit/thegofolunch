@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_workmates"
+        android:title="@string/bottom_navigation_menu_workmates"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/restaurant_nearby"
+        android:icon="@drawable/ic_restaurant"
+        android:title="nearby" />
+</menu>
