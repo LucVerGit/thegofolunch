@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.permissionsdispatcher:permissionsdispatcher:4.5.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc12a32f8c3daf18194d285c50177e62/jetified-permissionsdispatcher-4.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc12a32f8c3daf18194d285c50177e62/jetified-permissionsdispatcher-4.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc12a32f8c3daf18194d285c50177e62/jetified-permissionsdispatcher-4.5.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.permissionsdispatcher/permissionsdispatcher/4.5.0/f68db0add6904d7a60bbe1be08a43313544c345e/permissionsdispatcher-4.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.permissionsdispatcher/permissionsdispatcher/4.5.0/4679f3f73c341fc02983782776938fd68a2821d5/permissionsdispatcher-4.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
