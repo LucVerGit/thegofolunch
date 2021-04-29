@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -86,11 +87,14 @@ public class  MapsActivity extends FragmentActivity implements OnMapReadyCallbac
 
 
 
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
 
 
 
@@ -107,6 +111,7 @@ public class  MapsActivity extends FragmentActivity implements OnMapReadyCallbac
         switch (v.getId())
         {
             case R.id.ssearch_button:
+                finish();
                 EditText addressField = (EditText) findViewById(R.id.autoCompleteTextView);
                 String address = addressField.getText().toString();
 
@@ -159,9 +164,10 @@ public class  MapsActivity extends FragmentActivity implements OnMapReadyCallbac
                 transferData[0] = mMap;
                 transferData[1] = url;
 
-                getNearbyPlaces.execute(transferData);
-                Toast.makeText(this, "Searching for Nearby Hospitals...", Toast.LENGTH_SHORT).show();
+                //getNearbyPlaces.execute(transferData);
+                Toast.makeText(this, "BACK TO MAIN...", Toast.LENGTH_SHORT).show();
                 Toast.makeText(this, "Showing Nearby Hospitals...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 break;
 
 
@@ -174,6 +180,7 @@ public class  MapsActivity extends FragmentActivity implements OnMapReadyCallbac
                 getNearbyPlaces.execute(transferData);
                 Toast.makeText(this, "Searching for Nearby Schools...", Toast.LENGTH_SHORT).show();
                 Toast.makeText(this, "Showing Nearby Schools...", Toast.LENGTH_SHORT).show();
+
                 break;
 
 

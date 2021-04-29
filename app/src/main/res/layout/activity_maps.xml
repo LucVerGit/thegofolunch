@@ -19,8 +19,11 @@
         android:id="@+id/ssearch_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="Search"
+        android:layout_marginTop="676dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginRight="304dp"
+        android:text="back"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +31,9 @@
         android:id="@+id/restaurant_nearby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="680dp"
         android:text="restaurant"
         app:backgroundTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="school"
+        android:visibility="invisible"
         app:backgroundTint="#8BC34A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/restaurant_nearby" />
@@ -46,19 +53,21 @@
         android:id="@+id/hospital_nearby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hospital"
+        android:layout_marginBottom="4dp"
+        android:text="back"
         app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/schools_nearby" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="408dp"
+        android:layout_height="729dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:context=".MapsActivity"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="5dp" />
+        tools:layout_editor_absoluteY="3dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -67,6 +76,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
