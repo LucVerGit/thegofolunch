@@ -166,7 +166,7 @@ public class  MapsActivity extends FragmentActivity implements OnMapReadyCallbac
 
                 //getNearbyPlaces.execute(transferData);
                 Toast.makeText(this, "BACK TO MAIN...", Toast.LENGTH_SHORT).show();
-                
+
                 startActivity(new Intent(getApplicationContext(),MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 break;
 
