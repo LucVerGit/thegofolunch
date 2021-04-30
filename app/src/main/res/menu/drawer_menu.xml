@@ -15,8 +15,8 @@
         android:title="@string/settings" />
     <item
         android:id="@+id/restaurant_nearby_one"
-        android:icon="@drawable/ic_restaurant"
-        android:title="la carte Resto" />
+        android:icon="@drawable/ic_globe"
+        android:title="la carte des Resto" />
 
 
 
