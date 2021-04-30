@@ -14,7 +14,7 @@
         android:title="@string/bottom_navigation_menu_workmates"
         app:showAsAction="always|withText"/>
     <item
-        android:id="@+id/restaurant_nearby"
-        android:icon="@drawable/ic_restaurant"
-        android:title="nearby" />
+
+        android:icon="@drawable/ic_baseline_chat"
+        android:title="chat" />
 </menu>

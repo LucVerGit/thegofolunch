@@ -21,6 +21,7 @@ public class User {
     @Nullable
     private String selectedRestaurantName;
     private List<String> likedRestaurants;
+    private boolean userChat;
 
 
     public User() {
@@ -43,6 +44,7 @@ public class User {
         this.selectedRestaurantId = null;
         this.selectedRestaurantName = null;
         this.likedRestaurants = new ArrayList<>();
+        this.userChat = false;
     }
 
     public static String getCurrentUser() {return "";
@@ -109,5 +111,8 @@ public class User {
 
     public void setLikedRestaurants(List<String> likedRestaurants) {
         this.likedRestaurants = likedRestaurants;
+    }
+
+    public boolean getUserChat() {return userChat;
     }
 }
